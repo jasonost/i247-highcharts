@@ -1,1 +1,97 @@
-,Jan,Jan,Feb,Feb,Mar,Mar,Apr,Apr,May,May,Jun,Jun,Jul,Jul,Aug,Aug,Sep,Sep,Oct,Oct,Nov,Nov,Dec,DecDepartment,Budget,Actual,Budget,Actual,Budget,Actual,Budget,Actual,Budget,Actual,Budget,Actual,Budget,Actual,Budget,Actual,Budget,Actual,Budget,Actual,Budget,Actual,Budget,ActualInformation Technology,450,463,450,472,470,483,475,488,475,490,500,534,500,557,500,563,500,552,500,542,500,263,500,Executive,250,246,255,253,260,375,265,376,270,384,275,388,280,394,290,394,300,394,305,396,310,201,400,Facilities,190,193,190,195,180,186,170,174,170,166,180,168,190,200,200,210,200,208,190,183,190,87,200,Finance,100,96,100,95,100,95,110,98,110,101,110,109,120,110,120,112,120,112,120,113,120,66,120,Human Resources,50,51,50,64,50,58,51,53,51,50,51,50,52,48,52,47,52,49,53,50,53,25,53,Marketing,100,99,100,97,100,95,100,97,100,104,100,152,100,89,100,90,100,86,100,93,150,73,150,Sales,510,524,475,458,475,467,505,503,480,489,480,480,510,512,485,479,485,484,515,514,490,247,490,Technical Support,35,29,35,28,35,28,36,27,36,26,36,26,37,25,37,25,37,26,38,25,38,13,38,
+Department,Month,Budget,Actual
+Information Technology,Jan,450,463
+Executive,Jan,250,246
+Facilities,Jan,190,193
+Finance,Jan,100,96
+Human Resources,Jan,50,51
+Marketing,Jan,100,99
+Sales,Jan,510,524
+Technical Support,Jan,35,29
+Information Technology,Feb,450,472
+Executive,Feb,255,253
+Facilities,Feb,190,195
+Finance,Feb,100,95
+Human Resources,Feb,50,64
+Marketing,Feb,100,97
+Sales,Feb,475,458
+Technical Support,Feb,35,28
+Information Technology,Mar,470,483
+Executive,Mar,260,375
+Facilities,Mar,180,186
+Finance,Mar,100,95
+Human Resources,Mar,50,58
+Marketing,Mar,100,95
+Sales,Mar,475,467
+Technical Support,Mar,35,28
+Information Technology,Apr,475,488
+Executive,Apr,265,376
+Facilities,Apr,170,174
+Finance,Apr,110,98
+Human Resources,Apr,51,53
+Marketing,Apr,100,97
+Sales,Apr,505,503
+Technical Support,Apr,36,27
+Information Technology,May,475,490
+Executive,May,270,384
+Facilities,May,170,166
+Finance,May,110,101
+Human Resources,May,51,50
+Marketing,May,100,104
+Sales,May,480,489
+Technical Support,May,36,26
+Information Technology,Jun,500,534
+Executive,Jun,275,388
+Facilities,Jun,180,168
+Finance,Jun,110,109
+Human Resources,Jun,51,50
+Marketing,Jun,100,152
+Sales,Jun,480,480
+Technical Support,Jun,36,26
+Information Technology,Jul,500,557
+Executive,Jul,280,394
+Facilities,Jul,190,200
+Finance,Jul,120,110
+Human Resources,Jul,52,48
+Marketing,Jul,100,89
+Sales,Jul,510,512
+Technical Support,Jul,37,25
+Information Technology,Aug,500,563
+Executive,Aug,290,394
+Facilities,Aug,200,210
+Finance,Aug,120,112
+Human Resources,Aug,52,47
+Marketing,Aug,100,90
+Sales,Aug,485,479
+Technical Support,Aug,37,25
+Information Technology,Sep,500,552
+Executive,Sep,300,394
+Facilities,Sep,200,208
+Finance,Sep,120,112
+Human Resources,Sep,52,49
+Marketing,Sep,100,86
+Sales,Sep,485,484
+Technical Support,Sep,37,26
+Information Technology,Oct,500,542
+Executive,Oct,305,396
+Facilities,Oct,190,183
+Finance,Oct,120,113
+Human Resources,Oct,53,50
+Marketing,Oct,100,93
+Sales,Oct,515,514
+Technical Support,Oct,38,25
+Information Technology,Nov,500,263
+Executive,Nov,310,201
+Facilities,Nov,190,87
+Finance,Nov,120,66
+Human Resources,Nov,53,25
+Marketing,Nov,150,73
+Sales,Nov,490,247
+Technical Support,Nov,38,13
+Information Technology,Dec,500,
+Executive,Dec,400,
+Facilities,Dec,200,
+Finance,Dec,120,
+Human Resources,Dec,53,
+Marketing,Dec,150,
+Sales,Dec,490,
+Technical Support,Dec,38,

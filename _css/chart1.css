@@ -77,11 +77,9 @@ body {
 #line-chart
 {
     width: 98%;
-    height: 39%;
-    margin-top: 6px;
+    height: 40%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #ccc;
 }
 
 #diff-chart
@@ -91,7 +89,51 @@ body {
     margin-top: 6px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #ccc;
+}
+
+#month-titles {
+    width: 90%;
+    padding-left: 10%;
+    height: 24px;
+}
+
+#month-titles-title {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#month-titles-header {
+    width: 100%;
+    margin-top: 2px;
+    font-size: 10px;
+    z-index: 1000;
+}
+
+.month-titles-text {
+    text-align: center;
+    width: 8.333%;
+    float: left;
+}
+
+#dept-titles {
+    width: 10%;
+    height: 240px;
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.dept-title-row {
+    height: 12.5%;
+    width: 100%;
+    display: table;
+}
+
+.dept-title-row-text {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #footer
@@ -101,7 +143,6 @@ body {
     margin-top: 6px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #ccc;
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 6px;

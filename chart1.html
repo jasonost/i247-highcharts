@@ -10,15 +10,22 @@
 <body>
   <div id="wrapper">
     <div id ="header">
-        <h2 id="main-title">Monthly spending by department</h2>
+        <h2 id="main-title">Spending by department</h2>
     </div>
 
     <div id="line-chart">
-        line chart (cumulative variance)
     </div>
 
     <div id="diff-chart">
-        diff chart (+/- bars for each department for each month)
+        <div id='month-titles'>
+          <p id='month-titles-title'>
+            Monthly variance by department, <span style='color: #de2d26;'>over-</span> and <span style='color: #3182bd;'>under-</span>spend
+          </p>
+          <div id='month-titles-header'>
+          </div>
+        </div>
+        <div id='dept-titles'>
+        </div>
     </div>
 
     <div id="footer">
