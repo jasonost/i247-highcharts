@@ -82,7 +82,6 @@ body {
     margin-top: 6px;
     margin-left: 4px;
     float: left;
-    background-color: #ccc;
 }
 
 #admin-dept, #revenue-dept {
@@ -110,16 +109,14 @@ body {
     margin-top: 6px;
     margin-left: 4px;
     float: left;
-    background-color: #ccc;
     padding-left: 1%;
     padding-right: 1%;
-    padding-top: 6px;
+    padding-top: 60px;
 }
 
 .small-mult-chart {
     height: 126px;
     width: 232px;
-    background-color: #ccc;
 }
 
 #support-dept .small-mult-chart {
@@ -135,7 +132,7 @@ body {
 }
 
 #main-title {
-  padding-top: 12px;
+    padding-top: 12px;
 }
 
 p {
