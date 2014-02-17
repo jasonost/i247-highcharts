@@ -52,6 +52,7 @@ $(document).ready(function(){
       // Chart 1 specifics
       var month_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
       var cat_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov*', 'Dec'];
+      var cat_list_short = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N*', 'D'];
       var dept_list = ['Executive', 'Finance', 'Human Resources', 'Marketing', 'Sales', 'Technical Support', 'Information Technology', 'Facilities'];
       var chart_list = ['exec-chart', 'finance-chart', 'hr-chart', 'marketing-chart', 'sales-chart', 'techsupport-chart', 'it-chart', 'facilities-chart'];
       var color_list = ['#253494', '#2c7fb8', '#41b6c4', '#006837', '#31a354', '#78c679', '#993404', '#d95f0e'];
@@ -72,8 +73,12 @@ $(document).ready(function(){
         budget_bars.push(cur_budget);
         actual_bars.push(cur_actual);
         if ( m < 11 ) {
-          var cur_var = ((cur_actual / cur_budget) - 1) * 100;
-          var_line.push(cur_var);
+          var total_budget = 0;
+          var total_actual = 0;
+          $.each(budget_bars,function() {total_budget += this;});
+          $.each(actual_bars,function() {total_actual += this;});
+          var ytd_var = ((total_actual / total_budget) - 1) * 100;
+          var_line.push(ytd_var);
         };
       };
 
@@ -135,7 +140,7 @@ $(document).ready(function(){
           endOnTick: false
         }, { // secondary yAxis
           title: {
-            text: 'Monthly variance',
+            text: 'Cumulative year-to-date variance',
             style: {
               color: '#de2d26',
               fontSize: '10px',
@@ -152,10 +157,10 @@ $(document).ready(function(){
           },
           opposite: true,
           min: 0,
-          max: 12,
+          max: 8,
           startOnTick: false,
           endOnTick: false,
-          tickInterval: 3
+          tickInterval: 2
         }],
         legend: {
           borderWidth: 0,
@@ -204,7 +209,12 @@ $(document).ready(function(){
           budget_bars.push(cur_budget);
           if ( m < 11 ) {
             actual_bars.push(cur_actual);
-            var_line.push(((cur_actual / cur_budget) - 1) * 100);
+            var total_budget = 0;
+            var total_actual = 0;
+            $.each(budget_bars,function() {total_budget += this;});
+            $.each(actual_bars,function() {total_actual += this;});
+            var ytd_var = ((total_actual / total_budget) - 1) * 100;
+            var_line.push(ytd_var);
           };
         };
         $("#" + chart_location).highcharts({
@@ -236,11 +246,12 @@ $(document).ready(function(){
             }
           },
           xAxis: {
-            categories: cat_list,
+            categories: cat_list_short,
             labels: {
-              rotation: 270,
+              y: -42,
               style: {
-                fontSize: '8px'
+                fontSize: '7px',
+                fontWeight: 'bold'
               }
             }
           },
@@ -263,8 +274,8 @@ $(document).ready(function(){
             }],
             gridLineColor: '#EEEEEE',
             gridLineWidth: 0.5,
-            min: -390,
-            max: 570,
+            min: -580,
+            max: 660,
             tickInterval: 200,
             startOnTick: false,
             endOnTick: false
@@ -282,11 +293,11 @@ $(document).ready(function(){
             },
             gridLineWidth: 0,
             opposite: true,
-            min: -39,
-            max: 57,
+            min: -28,
+            max: 33,
             startOnTick: false,
             endOnTick: false,
-            tickInterval: 20
+            tickInterval: 10
           }],
           legend: {
             enabled: false

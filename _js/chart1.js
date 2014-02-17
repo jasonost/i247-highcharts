@@ -90,7 +90,7 @@ $(document).ready(function(){
           }
         },
         title: {
-          text: 'Year-to-date total variance from budget',
+          text: 'Year-to-date cumulative variance from budget',
           x: -20,
           style: {
             fontSize: '12px'
